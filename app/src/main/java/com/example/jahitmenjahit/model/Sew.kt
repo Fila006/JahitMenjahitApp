@@ -12,6 +12,7 @@ data class Sew(
     val id: Int = 0,
     val name: String,
     val address: String,
-
+    val manyorders: String,
+    val size: String,
 
         ) : Parcelable

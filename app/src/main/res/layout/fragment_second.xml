@@ -4,26 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".ui.SecondFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="60dp">
 
-        <Button
-            android:id="@+id/Savebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
-            android:text="@string/save"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/UkuranTextText4"
-            app:layout_constraintStart_toStartOf="@+id/UkuranTextText4"
-            app:layout_constraintTop_toBottomOf="@+id/BanyakPesananEditTextText3" />
 
         <EditText
-            android:id="@+id/UkuranTextText4"
+            android:id="@+id/SizeFragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -38,12 +28,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Ukuran"
-            app:layout_constraintEnd_toEndOf="@+id/BanyakPesananEditTextText3"
-            app:layout_constraintStart_toStartOf="@+id/BanyakPesananEditTextText3"
-            app:layout_constraintTop_toBottomOf="@+id/BanyakPesananEditTextText3" />
+            app:layout_constraintEnd_toEndOf="@+id/ManyOrdesFragment"
+            app:layout_constraintStart_toStartOf="@+id/ManyOrdesFragment"
+            app:layout_constraintTop_toBottomOf="@+id/ManyOrdesFragment" />
 
         <EditText
-            android:id="@+id/BanyakPesananEditTextText3"
+            android:id="@+id/ManyOrdesFragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -58,12 +48,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Banyak Pesanan"
-            app:layout_constraintEnd_toEndOf="@+id/AddressEditTextText2"
-            app:layout_constraintStart_toStartOf="@+id/AddressEditTextText2"
-            app:layout_constraintTop_toBottomOf="@+id/AddressEditTextText2" />
+            app:layout_constraintEnd_toEndOf="@+id/AddressFragment"
+            app:layout_constraintStart_toStartOf="@+id/AddressFragment"
+            app:layout_constraintTop_toBottomOf="@+id/AddressFragment" />
 
         <EditText
-            android:id="@+id/AddressEditTextText2"
+            android:id="@+id/AddressFragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -78,12 +68,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="23dp"
             android:text="Alamat"
-            app:layout_constraintEnd_toEndOf="@+id/NamaPemesananEditTextText"
-            app:layout_constraintStart_toStartOf="@+id/NamaPemesananEditTextText"
-            app:layout_constraintTop_toBottomOf="@+id/NamaPemesananEditTextText" />
+            app:layout_constraintEnd_toEndOf="@+id/NameFragment"
+            app:layout_constraintStart_toStartOf="@+id/NameFragment"
+            app:layout_constraintTop_toBottomOf="@+id/NameFragment" />
 
         <EditText
-            android:id="@+id/NamaPemesananEditTextText"
+            android:id="@+id/NameFragment"
             android:layout_width="283dp"
             android:layout_height="48dp"
             android:ems="10"
@@ -99,6 +89,36 @@
             android:text="Nama Pemesan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/SizeFragment"
+            app:layout_constraintStart_toStartOf="@+id/SizeFragment"
+            app:layout_constraintTop_toBottomOf="@+id/ManyOrdesFragment">
+
+            <Button
+                android:id="@+id/Deletebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone"
+                android:text="Hapus" />
+
+            <Button
+                android:id="@+id/Savebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="@string/save"
+                 />
+
+        </LinearLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
