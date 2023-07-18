@@ -14,5 +14,8 @@ data class Sew(
     val address: String,
     val manyorders: String,
     val size: String,
+    val latitude: Double?,
+    val longitude: Double?
 
-        ) : Parcelable
+    // menambahkan data latitude dan longitud untuk disimpan dalam tabel
+    ) : Parcelable
