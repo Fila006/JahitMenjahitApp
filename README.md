@@ -2,6 +2,8 @@
  UAS Tema JahitMenjahitapp
 
 
+
+
  Halaman pertama loding
  <img src="https://github.com/Fila006/JahitMenjahitApp/blob/main/Screenshot%20(55).png" width="300" height="600">
  
