@@ -17,7 +17,7 @@
   <img src="https://github.com/Fila006/JahitMenjahitApp/blob/main/Screenshot%202023-07-12%20093046.png" width="300" height="600">
 
   Halaman keempat ini akan muncul ketika button Login diclick
-  <img src="https://github.com/Fila006/JahitMenjahitApp/blob/main/Screenshot%202023-07-12%20093046.png" width="300" height="600">
+  <img src="https://github.com/Fila006/JahitMenjahitApp/blob/main/login2.png" width="300" height="600">
 
    Halaman login yang sudah diisi
    <img src="https://github.com/Fila006/JahitMenjahitApp/blob/main/Screenshot%202023-07-18%20182903.png" width="300" height="600">
